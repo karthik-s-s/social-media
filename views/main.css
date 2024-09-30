@@ -1,0 +1,131 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #495057;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  #loginBtn,
+  #uploadBtn,
+  #loadMoreBtn {
+    width: 150px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #loginBtn:hover,
+  #uploadBtn:hover,
+  #loadMoreBtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #login {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 30px auto;
+  }
+  
+  .input-group {
+    justify-content: center;
+  }
+  
+  .form-control {
+    max-width: 300px;
+  }
+  
+  #upload {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 30px auto;
+  }
+  
+  #posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .post {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 47%; /* Adjust to 47% for two posts per row */
+    margin-bottom: 20px;
+  }
+  
+  .post img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+  }
+  
+  .post p {
+    padding: 15px;
+    text-align: center;
+    color: #343a40;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  #noPostsMessage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6c757d;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .form-control {
+      width: 100%;
+    }
+  
+    #posts {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .post {
+      width: 90%; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #login,
+    #upload,
+    #feed {
+      padding: 0 15px;
+    }
+  
+    .post {
+      width: 100%;
+    }
+  }
+  
